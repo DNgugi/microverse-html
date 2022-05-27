@@ -14,18 +14,53 @@
       Thank you for taking the time to help us improve the platform
     </p>
     <form action="" id="survey-form">
-      <label for="name">Name</label>
+      <label for="name" id="name-label">Name</label>
       <input
         required
         type="text"
         name="name"
         id="name"
         placeholder="Enter your name"
-      > 
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" required placeholder="Enter your email" >
-      <label for="number">Age <small>(optional)</small></label>
-      <input type="number" name="number" id="number" min="0" max="100" placeholder="Age">
+      />
+      <label for="email" id="email-label">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        required
+        placeholder="Enter your email"
+      />
+      <label for="number" id="number-label"
+        >Age <small>(optional)</small></label
+      >
+      <input
+        type="number"
+        name="number"
+        id="number"
+        min="0"
+        max="100"
+        placeholder="Age"
+      />
+
+      <label for="dropdown"
+        >Which option best describes your current role?</label
+      >
+      <select name="dropdown" id="dropdown">
+        <option disabled selected value="">Select current role</option>
+        <option value="Student">Student</option>
+        <option value="Fulltime Job">Fulltime Job</option>
+        <option value="Full">Fulltime learner</option>
+        <option value="Prefer ">Prefer not to say</option>
+        <option value="other ">Other</option>
+      </select>
+
+      <label for="">Would you recommend freecodecamp to a friend</label>
+      <input type="radio" name="" id="definitely" value="Definitely" checked />
+      <label for="definitely">Definitely</label>
+      <input type="radio" name="radio" id="maybe" value="Maybe" />
+      <label for="maybe">Maybe</label>
+      <input type="radio" name="radio" id="not-sure" value="Not sure" />
+      <label for="not-sure">Not sure</label>
     </form>
     <script src="js/index.js"></script>
   </body>
