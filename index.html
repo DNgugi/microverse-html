@@ -14,14 +14,18 @@
       Thank you for taking the time to help us improve the platform
     </p>
     <form action="" id="survey-form">
+      <label for="name">Name</label>
       <input
         required
         type="text"
         name="name"
         id="name"
         placeholder="Enter your name"
-      > Name </input>
-      <input type="email" id="email" required placeholder="Enter your email" >Email </input>
+      > 
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required placeholder="Enter your email" >
+      <label for="number">Age <small>(optional)</small></label>
+      <input type="number" name="number" id="number" min="0" max="100" placeholder="Age">
     </form>
     <script src="js/index.js"></script>
   </body>
